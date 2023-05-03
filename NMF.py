@@ -1,8 +1,6 @@
 #import libs
 import pandas as pd
 import numpy as np
-from sklearn.decomposition import NMF
-
 import pickle
 import warnings
 warnings.filterwarnings(action='ignore')

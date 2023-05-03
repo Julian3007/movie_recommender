@@ -4,7 +4,8 @@ import pandas as pd
 import numpy as np
 import pickle
 import warnings
-warnings.filterwarnings(action='ignore')
+
+
 with open('factorizer_NMF.pkl', 'rb') as file_in:
     model = pickle.load(file_in)
 
