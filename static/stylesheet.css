@@ -1,0 +1,185 @@
+/* This is a comment /
+/ General syntax of CSS (Cascading Style Sheet) */
+
+/* selector {
+property:value;
+another_property:another:value
+} */
+
+
+h1 {
+	color: rgb(255, 0, 0);
+	font-size: 30px;
+	margin: 10px;
+	text-shadow: 0px 0px 00px rgb(255, 255, 255);
+	}
+	
+	p {
+	color: rgb(255, 0, 0);
+	font-size: 25px;
+	margin: 30px;
+	text-shadow: 0px 0px 00px rgb(255, 255, 255);
+	}
+
+	p1 {
+		color: rgb(219, 219, 219);
+		font-size: 20px;
+		margin: 50px;
+		text-shadow: 0px 0px 0px rgb(255, 255, 255);
+		}
+	
+	form {
+		color: rgb(219, 219, 219);
+		font-size: 20px;
+		margin: 50px;
+		text-shadow: 0px 0px 00px rgb(255, 255, 255);
+	}
+
+	body {
+	text-align: center;
+	background-color: rgb(255, 249, 198);
+	background: url(/static/curtain.jpg) center center/cover no-repeat;
+	font-family: 'Courier New', Courier, monospace;
+	}
+	
+	/* Changing the style by accessing the class attribute of tag. */
+	
+	.input-placeholder {
+	max-width: 50px;
+	background-color: rgb(184, 255, 170);
+	}
+	
+	.input-placeholder:hover {
+	background-color: rgb(102, 255, 0);
+	box-shadow: 3px 3px 3px;
+	}
+
+	/* Adjusting size of input placeholders and centering text */
+	::placeholder {
+		font-size: 18px;
+		text-align: center;
+		color: rgb(37, 37, 37);
+	}
+
+	/* Centering all input placeholders to a vertical centerline */
+	input {
+		display: flex;
+		align-items: center;
+		color: rgb(0, 0, 0);
+	}
+
+	/* Adjusting the space and size of input boxes */
+	label {
+		display: flex;
+		flex-direction: column;
+		margin: 10px;
+	}
+
+	a {
+		color: rgb(219, 219, 219);
+		text-shadow: 0px 0px 20px rgb(255, 255, 255);
+	  }
+	
+	ul {
+		list-style: none;
+		color: rgb(219, 219, 219);
+		font-size: 25px;
+
+
+	}
+
+
+	/* Adjusting size of input boxes and centering inputted text */
+	input[type="text"], input[type="email"], input[type="password"] {
+		padding: 8px;
+		margin: 20px 0;
+		border-radius: 5px;
+		border: none;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+		width: 200px;
+		text-align: center;
+	}
+
+	a:hover {
+		color: rgb(51, 255, 0);
+	}
+
+	/* Centering all input placeholders to the center of the screen */
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	
+	/* Changing the style by accessing the id attribute of tag. */
+	
+	#logo-homepage {
+	border-radius: 400px;
+	}
+	
+	
+	#submit-button {
+		background-color: rgb(143, 0, 0);
+		margin: 50px;
+		width: 120px;
+		height: 120px;
+		font-size: 40px;
+		text-align: center;
+	}
+	
+	#submit-button:hover {
+		animation: myAnim 0.5s ease 0s 1 normal forwards;
+	}
+
+	#submit-button:active {
+		animation: myAnim2 2s ease 0s 1 normal forwards;
+	}
+	
+	
+
+	@keyframes myAnim {
+		0% {
+			transform: scale(1);
+		}
+	
+		50% {
+			transform: scale(1.1);
+		}
+	
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes myAnim2 {
+		0% {
+			transform: scale3d(1, 1, 1);
+		}
+	
+		30% {
+			transform: scale3d(1.25, 0.75, 1);
+		}
+	
+		40% {
+			transform: scale3d(0.75, 1.25, 1);
+		}
+	
+		50% {
+			transform: scale3d(1.15, 0.85, 1);
+		}
+	
+		65% {
+			transform: scale3d(0.95, 1.05, 1);
+		}
+	
+		75% {
+			transform: scale3d(1.05, 0.95, 1);
+		}
+	
+		100% {
+			transform: scale3d(1, 1, 1);
+		}
+	}
+	
+		

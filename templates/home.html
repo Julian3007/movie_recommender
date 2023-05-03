@@ -4,69 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="../static/stylesheet.css">
     <title>Welcome to NMF-Based Movie Recommender</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            text-align: center;
-        }
-        h1 {
-            font-size: 36px;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        input[type="text"] {
-            padding: 10px;
-            font-size: 18px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            width: 200px;
-            margin-bottom: 10px;
-        }
-        input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 5px;
-            border: none;
-            background-color: #0077cc;
-            color: #fff;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #005ea8;
-        }
-        a {
-            color: #0077cc; 
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to NMF-Based Movie Recommender</h1>
-        <p>Rate the following movies on a scale of 0-5 🌟:</p>
+        <h1>NMF-Based Movie Recommender</h1>
+        <p>Rate the following movies on a scale of 0-5 🌟</p>
         <form action="/results">
             Twelve Monkeys: <input class="input-placeholder" type="text" name="Twelve Monkeys (a.k.a. 12 Monkeys) " placeholder="0-5"><br>
             Alien: <input class="input-placeholder" type="text" name="Alien " placeholder="0-5"><br>
             Spider-Man: <input class="input-placeholder" type="text" name="Spider-Man " placeholder="0-5"><br>
             Princess Bride: <input class="input-placeholder" type="text" name="Princess Bride, The " placeholder="0-5"><br>
-            Lord of the Rings: The Fellowship of the Ring: <input class="input-placeholder" type="text" name="Lord of the Rings: The Fellowship of the Ring, The " placeholder="0-5"><br>
+            Lord of the Rings - The Fellowship of the Ring: <input class="input-placeholder" type="text" name="Lord of the Rings: The Fellowship of the Ring, The " placeholder="0-5"><br>
             <input id="submit-button" type="submit" value="🍿">
     </div>
 </body>
