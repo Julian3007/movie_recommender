@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to NMF-Based Movie Recommender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            background-color: #0077cc;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #005ea8;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to NMF-Based Movie Recommender</h1>
+        <p>Rate the following movies on a scale of 0-5 🌟:</p>
+        <form action="/results">
+            <label for="28-days-later">28 Days Later:</label>
+            <input type="text" id="28-days-later " name="28 Days Later" placeholder="0-5"><br>
+            <label for="x-men">X-Men:</label>
+            <input type="text" id="x-men" name="X-Men " placeholder="0-5"><br>
+            <label for="spider-man">Spider-Man:</label>
+            <input type="text" id="spider-man " name="Spider-Man" placeholder="0-5"><br>
+            <label for="tron">Tron:</label>
+            <input type="text" id="tron" name="Tron " placeholder="0-5"><br>
+            <label for="quiz-show">Quiz Show:</label>
+            <input type="text" id="quiz-show" name="Quiz Show " placeholder="0-5"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>Get a movie recommendation <a href="/results">here</a>.</p>
+    </div>
+</body>
+</html>
+
+
